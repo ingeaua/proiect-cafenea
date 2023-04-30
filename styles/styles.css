@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+nav {
+    background: white;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+#logo-nav {
+    width: 72px;
+    height: auto;
+    margin: 13px 24px 
+}
+
+nav ul {
+    float: right;
+    margin-right: 32px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 16px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.active, a:hover {
+    color: #2e6a55;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none
+}
+
+
+@media (max-width: 952px) {
+    nav ul li a{
+        font-size: 16px;
+    }
+    #titlu-poveste {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    
+    #titlu-poveste {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 858px)
+{
+    nav {
+        position: fixed; 
+
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(245, 245, 245);
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #2e6a55;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    #logo-nav {
+        width: 60px;
+        height: auto;
+        margin: 19px 20px 
+    }
+    .poveste-box {
+        display: grid;
+        place-items: center;
+        align-content: center;
+    }
+    #titlu-poveste {
+        font-size: 20px;
+        padding: 2em 0 1em 0;
+    }
+    #logo-branding {
+
+        padding-top: 22px;
+        max-width: max(150px, 15vw);
+        height: auto;           
+        display: inline-block;
+        text-align: center;
+        z-index: 1;
+    
+    }
+    #text-poveste {
+
+        font-size: max(4vw, 20px);
+    
+    }
+  
+}
+
+.branding-gradient {
+    background: url(/images/gradient.png);
+    height: calc(70vh - 100px);
+    width: 100vw;
+    object-fit: cover;
+    display: grid;
+    place-items: center;
+
+}
+
+.div-branding {
+
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: absolute;
+
+
+    width: 100vw;
+
+}
+
+#logo-branding {
+
+    padding-top: 22px;
+    width: max(18vw, 240px); 
+    height: auto;           
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+
+}
+
+#text-branding {
+
+    color: white;
+    font-weight: 600;
+    font-size: max(28px, 2vw);
+    z-index: 1;
+    
+    padding-top: 30px;
+
+}
+
+#povestea-noastra {
+
+    color: white;
+    overflow: hidden;
+
+}
+
+footer {
+
+    height: 26vh;
+    background-color: black;
+
+}
+
+div h2 {
+
+    font-size: 34px;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    padding: 3.5em 4em 2em;
+
+}
+
+section div p {
+
+    font-size: 26px;
+    color: black;
+    padding: 0 4em;
+
+}
+
+#poveste-box {
+
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+section div a {
+
+    overflow: visible;
+
+}
+
+#buton-afla-multe {
+
+    font-size: max(18px, 1.2vw);
+    color: black;
+    margin: 2em 5em;
+    padding: 0.6em 1.6em;
+    border: 3px solid #2e6a55;
+    display: inline-flex;
+    border-radius: 50px;
+    font-weight: bold;
+
+
+}
+
+#buton-afla-multe:hover {
+
+    background-color: rgb(46, 106, 85, 0.8);
+    color: rgb(255, 255, 255);
+
+}
+
+#titlu-specialitati {
+
+    text-align: center;
+    font-size: min(48px, 5vw);
+    padding: 32px 10px 10px 10px;
+
+}
+
+
+#specialitatile-noastre {
+    background: rgb(231, 231, 231);
+    box-sizing: border-box;
+}
+
+.linie-specialitati {
+
+    display: flex;
+}
+
+.imagine-cafeluta {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+.coloana {
+float: left;
+width: 33.3%;
+margin-bottom: 16px;
+padding: 24px 1vw 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .linie-specialitati {
+        flex-direction: column;
+    }
+    .coloana {
+        width: 100%;
+    }
+}
+
+section div div div div h2 {
+    width: 100%;
+    font-weight: 600;
+    padding: 24px 8px 8px 8px;
+}
+
+section div div div div p {
+    width: 100%;
+    padding: 0;
+    font-size: min(30px, 5vw);
+}
+
+.card {
+box-shadow: 8px 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+padding:  16px;
+background-color: rgba(245, 245, 245, 0.788);
+}
+
+
+
+
+
+
