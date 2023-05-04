@@ -325,15 +325,21 @@ padding:  16px;
 background-color: rgba(245, 245, 245, 0.788);
 }
 
-.hidden {
+.ascuns {
 
-    visibility: hidden;
+    display: none;
+
+}
+
+.blurry {
+
+    filter: blur(4px);
 
 }
 
 .popup {
 
-    position: absolute;
+    position: sticky;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -350,7 +356,7 @@ background-color: rgba(245, 245, 245, 0.788);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center
 
 
 }
@@ -378,3 +384,66 @@ background-color: rgba(245, 245, 245, 0.788);
 
 }
 
+.popup div h2 {
+
+    text-align: center;
+    color: black;
+    margin: 10px 0px 20px;
+    font-size: 24px;
+
+}
+
+.popup .container-popup .form-element {
+
+    margin: 12px 0;
+
+}
+
+.popup div div p {
+
+    font-size: 16px;
+    color: #222222;
+
+}
+
+.popup div div input {
+
+    margin-top: 5px;
+    display: block;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+.popup div .btn {
+
+    width: 35%;
+    height: 36px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222222;
+    color:white;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+}
+
+#fundal-popup {
+
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 220vh;
+    position: absolute;
+    overflow: visible;
+
+
+}
+
+
+
+/* adauga in js ca atunci cand apare popup ul sa se puna class blur la toate sectiunile si navbar idk poate merge asa */
