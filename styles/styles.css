@@ -337,6 +337,7 @@ background-color: rgba(245, 245, 245, 0.788);
 
 }
 
+/* */
 .popup {
 
     position: sticky;
@@ -432,7 +433,7 @@ background-color: rgba(245, 245, 245, 0.788);
 
 }
 
-#fundal-popup {
+.fundal-popup {
 
     top: 0px;
     left: 0px;
@@ -441,9 +442,48 @@ background-color: rgba(245, 245, 245, 0.788);
     position: absolute;
     overflow: visible;
 
+}
+
+@media (max-width: 858px){
+
+    #popup {
+
+        position: sticky;
+        justify-content: center;
+        transform: none;
+        width: 72vw;
+        background-color: whitesmoke;
+        top: 22vh;
+        left: 10%;
+        padding: 16px
+    }
+
+    #fundal-popup {
+
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 375vh;
+        overflow: visible;
+    }
+
+    #container-popup {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center
+    }
 
 }
 
+/*
+
+to do : 
+
+drop down css - in footer
+animatii css
 
 
-/* adauga in js ca atunci cand apare popup ul sa se puna class blur la toate sectiunile si navbar idk poate merge asa */
+
+*/

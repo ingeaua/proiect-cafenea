@@ -27,11 +27,22 @@ function loadPopUp() {
     let popUp = document.getElementById("fundal-popup");
     for (let i = 0; i < (copiiBody.length - 3); i++) {
         copiiBody[i].classList.add("blurry");
-        console.log(copiiBody[i]);
     }
     popUp.classList.remove("ascuns");
+    document.getElementsByClassName("close-btn")[0].addEventListener("click", removePopUp);
+}
 
-    /// to da sa mearga butonul de inchis popup
+function removePopUp()
+{
+    console.log("intru in asta");
+    const body = document.getElementsByTagName("body");
+    let copiiBody = body[0].children;
+    let popUp = document.getElementById("fundal-popup");
+    for (let i = 0; i < (copiiBody.length - 3); i++) {
+        copiiBody[i].classList.remove("blurry");
+    }
+    popUp.classList.add("ascuns");
+    document.getElementsByClassName("close-btn")[0].removeEventListener("click", removePopUp);
 
 }
 
@@ -40,3 +51,5 @@ window.onload = setInterval(setRandomColor, 7500);
 window.onload = setInterval(setRandomHeart, 2000);
 
 window.onload = setTimeout(loadPopUp, 1000);
+
+/// to do sa se salveze informatiile alea undeva (server??)
