@@ -29,6 +29,7 @@ nav {
 nav ul {
     float: right;
     margin-right: 32px;
+
 }
 
 nav ul li {
@@ -77,6 +78,10 @@ nav ul li a {
     
     #titlu-poveste {
         font-size: 28px;
+    }
+
+    .dropdown-content {
+        visibility: hidden;
     }
 
 }
@@ -216,7 +221,7 @@ footer {
 
 }
 
-section div p {
+article div p {
 
     font-size: 26px;
     color: black;
@@ -478,15 +483,51 @@ background-color: rgba(245, 245, 245, 0.788);
 }
 
 /*
-
 to do CSS: 
 
 check sa fie selectori de toate tipurile
-drop down css - in footer
-animatii css
-tranzitii css
-check pt grid daca exista
-
-
-
+animatii css care sa modifice mai multe proprietati
+tranzitii css pt diferite proprietati
 */
+
+  
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+  }
+
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    top: 100px;
+    right: 6.5%;
+  }
+
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: medium;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    position: absolute;
+    display: block;
+  }
