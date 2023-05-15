@@ -50,6 +50,6 @@ window.onload = setInterval(setRandomColor, 7500);
 
 window.onload = setInterval(setRandomHeart, 2000);
 
-window.onload = setTimeout(loadPopUp, 1000);
+window.onload = setTimeout(loadPopUp, 10000);
 
-/// to do sa se salveze informatiile alea undeva (server??)
+/// to do sa se salveze informatiile alea undeva (local storage) ++ daca popup ul a fost completat sa nu mai apara
