@@ -50,6 +50,14 @@ window.onload = setInterval(setRandomColor, 7500);
 
 window.onload = setInterval(setRandomHeart, 2000);
 
-window.onload = setTimeout(loadPopUp, 10000);
+window.onload = setTimeout(loadPopUp, 5000);
 
-/// to do sa se salveze informatiile alea undeva (local storage) ++ daca popup ul a fost completat sa nu mai apara
+/// to do 
+// 
+//  creare / stergere elemente + metoda string, date -> ceva joc cu dreptunghiuri si poti sa creezi cate vrei si daca ai mai multe castigi mai mult
+//  si daca castigi sa ai unu popup cu codu de reducere (unde sa fie folosite functii de data si string), localstorage daca ai castigat deja
+
+//  la formularu din popup sa se dea alert cu ceva in functie de altceva, idk
+//  localstorage, validare formular regex -> in popup
+
+
