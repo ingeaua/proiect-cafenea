@@ -106,10 +106,48 @@ function incepeJoc() {
     {
         const inaltimeRandom = Math.floor(Math.random() * (830 - 50 + 1)) + 50;
         listaDreptunghiuri[i].style.height = inaltimeRandom + 'px';
+        listaDreptunghiuri[i].addEventListener('click', resizeDreptunghi)
     }
 
 
 } 
+
+function resizeDreptunghi() {
+
+    const inaltimeRandom = Math.floor(Math.random() * (830 - 50 + 1)) + 50;
+    this.style.height = inaltimeRandom + 'px';
+
+    setTimeout(checkWin, 1000);
+
+}
+
+function checkWin() {
+
+    let listaDreptunghiuri = document.getElementById('game-field').children;
+
+    for (let i = 0; i < nrDreptunghiuri - 1; i++)
+    {
+        console.log(listaDreptunghiuri[i]);
+        if (listaDreptunghiuri[i].offsetHeight < listaDreptunghiuri[i+1].offsetHeight)
+        {
+            return;
+        }
+    }
+
+    console.log("trec de verificare gen e win");
+
+    for (let i = 0; i < nrDreptunghiuri; i++)
+    {
+        listaDreptunghiuri[i].removeEventListener('click', resizeDreptunghi)
+    }
+
+    codReducere = genereazaCodReducere(nrDreptunghiuri);
+
+    stringAlert = ["Felicitări, codul dumneavoastră pentru reducere este: \n", codReducere, "\nReducerea este de ", (nrDreptunghiuri - 2) * 10, "%!"].join("");
+
+    alert(stringAlert)
+
+}
  
 function reincarcaPagina()
 {
@@ -117,11 +155,3 @@ function reincarcaPagina()
     location.reload();
 
 }
-
-
-
-
-/// to do 
-// 
-//  joc cu dreptunghiuri in care ai intre 3 si 9 si daca reusesti sa le aranjezi crescator ca inaltime primesti un cod de reducere printr un alert
-//  da trebuie cumva facut sa poti sa adaugi cate vrei tu da minim 3 max 9 also localstorage daca ai castigat deja in ultima luna

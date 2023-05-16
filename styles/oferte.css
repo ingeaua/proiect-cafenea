@@ -21,7 +21,7 @@
     border-radius: 10px;
     font-size: 16px;
     color: white;
-    background-color: #337ab7;
+    background-color: #2780ce;
     cursor: pointer;
     text-decoration: none;
     margin-right: 50px;
@@ -54,6 +54,12 @@
     background-color: #f0ac4edc;
 }
 
+.buton-joc#stop:hover {
+
+    background-color:#2780cee3
+
+}
+
 #butoane {
 
     margin-bottom: 30px;
@@ -83,7 +89,6 @@
     margin-left: 24px;
     margin-top: 32px;
     cursor: pointer;
-    
-
+    transition: 1s;
 
 }
