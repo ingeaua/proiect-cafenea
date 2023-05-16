@@ -88,9 +88,5 @@ window.onload = setTimeout(loadPopUp, 500);
 document.querySelectorAll("#logo-nav").forEach(element => 
                                         element.addEventListener("click", curataStorage));
 
-/// to do 
-// 
-//  creare / stergere elemente + metoda string, date -> ceva joc cu dreptunghiuri si poti sa creezi cate vrei si daca ai mai multe castigi mai mult
-//  si daca castigi sa ai unu popup cu codu de reducere (unde sa fie folosite functii de data si string), localstorage daca ai castigat deja
 
 

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/92659dd7c5.js" crossorigin="anonymous"></script>
+    <script src="/scripts/oferte.js" defer></script>
     
 </head>
 <body>
@@ -51,15 +52,23 @@
                 
             </p>
             <p id="text-joc">
-                Scopul jocului este să sortați dreptunghiurile în funcție de înălțime. La apăsarea pe un dreptunghi, înălțimea lui va fi modificată random.
+                Scopul jocului este să sortați dreptunghiurile în funcție de înălțime, cel mai înalt aflându-se în partea stângă. 
+                La apăsarea pe un dreptunghi, înălțimea lui va fi modificată random.
             </p>
+            <div id="butoane">
+                <button class="buton-joc" id="adauga">Adaugă dreptunghi</button>
+                <button class="buton-joc" id="elimina">Elimină dreptunghi</button>
+                <button class="buton-joc" id="incepe">Începe joc</button>
+                <button class="buton-joc ascuns" id="stop">Stop</button>
+            </div>
             
         </div>
     </article>
 
     <section id="game-field">
-        <div class="div-branding">
-        </div>
+        <div class="dreptunghi"></div>
+        <div class="dreptunghi"></div>
+        <div class="dreptunghi"></div>
     </section>
     
 
