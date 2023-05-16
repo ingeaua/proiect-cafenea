@@ -106,19 +106,21 @@
             <div class="container-popup" id="container-popup">
                 <div class="close-btn">&times;</div>
                 <h2>Abonează-te pentru a primi oferte!</h2>
-                <div class="form-element">
-                    <p>Introduceți-vă email-ul</p>
-                    <input type="email" placeholder="Introduceți email">
-                </div>
-                <div class="form-element">
-                    <p>Introduceți-vă data nașterii.</p> 
-                    <input type="date">
-                </div>
-                <div class="form-element">
-                    <p>Introduceți-vă numele</p>    
-                    <input type ="text" placeholder="Introduceți nume">
-                </div>
-                <input type="submit" class="btn"> 
+                <form id="form-popup">
+                    <div class="form-element">
+                        <p>Introduceți-vă email-ul</p>
+                        <input type="email" placeholder="Introduceți email" id="email-user" required autocomplete="off">
+                    </div>
+                    <div class="form-element">
+                        <p>Introduceți-vă nr de telefon</p> 
+                        <input type="text" placeholder="Introduceți telefon" id="telefon-user" required autocomplete="off">
+                    </div>
+                    <div class="form-element">
+                        <p>Introduceți-vă numele</p>    
+                        <input type ="text" placeholder="Introduceți nume" id="nume-user" required autocomplete="off">
+                    </div>
+                    <input type="submit" class="btn" id="buton-submit">
+                </form> 
             </div>
         </div>
     </div>
