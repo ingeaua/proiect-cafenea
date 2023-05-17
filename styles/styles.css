@@ -116,6 +116,12 @@ nav ul li a {
 
 @media (max-width: 858px)
 {
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+
     nav {
         position: fixed; 
 
@@ -229,13 +235,6 @@ nav ul li a {
 
     color: white;
     overflow: hidden;
-
-}
-
-footer {
-
-    height: 26vh;
-    background-color: black;
 
 }
 
@@ -545,9 +544,41 @@ li.dropdown {
     font-size: medium;
   }
   
-  .dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #f1f1f1;}
   
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     position: absolute;
     display: block;
-  }
+}
+
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+}
+  
+.container-footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+  
+.container-footer p {
+    margin: 10px 0;
+}
+  
+.iconite {
+    margin-top: 20px;
+}
+  
+.iconite a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+  

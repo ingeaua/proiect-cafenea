@@ -83,7 +83,7 @@ window.onload = setInterval(setRandomColor, 7500);
 
 window.onload = setInterval(setRandomHeart, 2000);
 
-window.onload = setTimeout(loadPopUp, 500);
+window.onload = setTimeout(loadPopUp, 7500);
 
 document.querySelectorAll("#logo-nav").forEach(element => 
                                         element.addEventListener("click", curataStorage));
